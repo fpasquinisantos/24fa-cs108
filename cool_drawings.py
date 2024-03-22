@@ -28,14 +28,16 @@ def square_fernando(turtle):
         turtle.right(90)
     turtle.end_fill()
     
-def pinkcircle_anneka(turtle):
+def pinksqure_anneka(turtle):
     '''
     Author: Anneka Bos
     Draws a pink circle
     '''
     turtle.fillcolor('pink')
     turtle.begin_fill()
-    turtle.circle(100)
+    for i in range (4):
+        turtle.forward(50)
+        turtle.right(90)
     turtle.end_fill()
     
 def fractal_fernando(t):
