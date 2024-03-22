@@ -101,6 +101,21 @@ def yellosquare_jieun (turtle):
         turtle.forward(200)
         turtle.right(90)
     turtle.end_fill()
+    
+def greentriangle_jake(turtle):
+    """
+    Author: Jake McClure
+    Draws a green triangle
+    """
+    turtle.fillcolor('green')
+    turtle.begin_fill()
+    turtle.penup()
+    turtle.setposition(-100, -100)  # Start at bottom left corner
+    turtle.pendown()
+    for _ in range(3):
+        turtle.forward(100)
+        turtle.right(120)
+    turtle.end_fill()
 
 
 def fractal_fernando(t):
