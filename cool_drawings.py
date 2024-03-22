@@ -4,6 +4,19 @@ The figure shouldn't surpass a square of 200x200 points.
 The turtle passed should be start AND END pointing left at the right-left corner of the figure.
 """
 
+
+def bluepolygon_sofie(turtle):
+    """
+    Author: Sofie Schumerth
+    Draws a blue polygon similar to a spirograph
+    """
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for i in range(12):
+        turtle.forward(108)
+        turtle.right(150)
+    turtle.end_fill()
+    
 def bluesquare_fernando(turtle):
     """
     Author: Fernando Santos
