@@ -143,3 +143,19 @@ def fractal_fernando(t):
         koch_line(length)
         t.right(360/poly_sides)
     t.end_fill()
+    
+    
+def purpletriangle_Abraham(turtle):
+    """
+    Author: Abraham Jeon
+    A purple triangle
+    """
+    turtle.fillcolor('purple')
+    turtle.begin_fill()
+    turtle.penup()
+    turtle.setposition(0, 0) #start at 0, 0
+    turtle.pendown()
+    for i in range(3):
+        turtle.forward(100)
+        turtle.right(120)
+    turtle.end_fill()
