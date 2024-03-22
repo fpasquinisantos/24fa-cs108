@@ -27,6 +27,17 @@ def square_fernando(turtle):
         turtle.forward(150)
         turtle.right(90)
     turtle.end_fill()
+def greenoctogan_ryan(turtle):
+    """
+    Author: Ryan Halberg
+    Draws a Green Octogan
+    """
+    turtle.fillcolor('green')
+    turtle.begin_fill()
+    for i in range(8):
+        turtle.forward(100)
+        turtle.right(360/8)
+    turtle.end_fill()
     
 def fractal_fernando(t):
     """
