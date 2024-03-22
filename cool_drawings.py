@@ -4,6 +4,19 @@ The figure shouldn't surpass a square of 200x200 points.
 The turtle passed should be start AND END pointing left at the right-left corner of the figure.
 """
 
+
+def bluepolygon_sofie(turtle):
+    """
+    Author: Sofie Schumerth
+    Draws a blue polygon similar to a spirograph
+    """
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for i in range(12):
+        turtle.forward(108)
+        turtle.right(150)
+    turtle.end_fill()
+    
 def bluesquare_fernando(turtle):
     """
     Author: Fernando Santos
@@ -54,6 +67,31 @@ def square_fernando(turtle):
         turtle.right(90)
     turtle.end_fill()
     
+def pinksqure_anneka(turtle):
+    '''
+    Author: Anneka Bos
+    Draws a pink circle
+    '''
+    turtle.fillcolor('pink')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(50)
+        turtle.right(90)
+    turtle.end_fill()
+    
+def yellosquare_jieun (turtle):
+    """
+    Author: Jieun Seo
+    Draws a yellow square
+    """
+    turtle.fillcolor('yellow')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(200)
+        turtle.right(90)
+    turtle.end_fill()
+
+
 def fractal_fernando(t):
     """
     Author: Fernando Santos
