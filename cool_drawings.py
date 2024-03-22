@@ -3,10 +3,11 @@ Put here your custom function to draw something.
 The figure shouldn't surpass a square of 200x200 points.
 The turtle passed should be start AND END pointing left at the right-left corner of the figure.
 """
+import turtle
 
 def square_fernando(turtle):
     """
-    Author: Fernando Santos
+    Author: Levi Suter
     Draws a simple 100x100 square
     """
     turtle.fillcolor('green')
@@ -18,7 +19,7 @@ def square_fernando(turtle):
     
 def fractal_fernando(t):
     """
-    Author: Fernando Santos
+    Author: Levi Suter
     Draws a Koch line fractal
     """
     def koch_line(l):
@@ -41,3 +42,22 @@ def fractal_fernando(t):
         koch_line(length)
         t.right(360/poly_sides)
     t.end_fill()
+
+def draw_something():
+    screen = turtle.Screen()
+    screen.setup(200, 200)
+    screen.tracer(0)
+    
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(-100, 100)  # Starting position
+    t.pendown()
+    t.left(180)  # Start and end pointing left
+    
+    square_fernando(t)
+    fractal_fernando(t)
+
+    screen.update()
+    screen.mainloop()
+
+draw_something()
