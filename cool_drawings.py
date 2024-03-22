@@ -15,6 +15,32 @@ def bluesquare_fernando(turtle):
         turtle.forward(150)
         turtle.right(90)
     turtle.end_fill()
+    
+def fractal_zuriel(t):
+    """
+    Author: Zuriel Olu-Silas
+    Draws a pink Koch line fractal
+    """
+    def koch_line(l):
+        if l > unit:
+            koch_line(l/3)
+            t.left(60)
+            koch_line(l/3)
+            t.right(120)
+            koch_line(l/3)
+            t.left(60)
+            koch_line(l/3)
+        else:
+            t.forward(unit)
+    
+    t.fillcolor('pink')
+    t.begin_fill()
+    unit, depth, poly_sides = 4, 3, 3
+    length = (3**depth)*unit   # number is #segments
+    for i in range(poly_sides):
+        koch_line(length)
+        t.right(360/poly_sides)
+    t.end_fill()
 
 def square_fernando(turtle):
     """
