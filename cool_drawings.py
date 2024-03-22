@@ -28,6 +28,16 @@ def square_fernando(turtle):
         turtle.right(90)
     turtle.end_fill()
     
+def pinkcircle_anneka(turtle):
+    '''
+    Author: Anneka Bos
+    Draws a pink circle
+    '''
+    turtle.fillcolor('pink')
+    turtle.begin_fill()
+    turtle.circle(100)
+    turtle.end_fill()
+    
 def fractal_fernando(t):
     """
     Author: Fernando Santos
