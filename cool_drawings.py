@@ -5,6 +5,31 @@ The turtle passed should be start AND END pointing left at the right-left corner
 """
 import turtle
 
+
+def bluepolygon_sofie(turtle):
+    """
+    Author: Sofie Schumerth
+    Draws a blue polygon similar to a spirograph
+    """
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for i in range(12):
+        turtle.forward(108)
+        turtle.right(150)
+    turtle.end_fill()
+    
+def bluesquare_fernando(turtle):
+    """
+    Author: Fernando Santos
+    Draws a simple 100x100 square
+    """
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(150)
+        turtle.right(90)
+    turtle.end_fill()
+
 def square_fernando(turtle):
     """
     Author: Levi Suter
@@ -14,6 +39,18 @@ def square_fernando(turtle):
     turtle.begin_fill()
     for i in range(4):
         turtle.forward(150)
+        turtle.right(90)
+    turtle.end_fill()
+    
+def pinksqure_anneka(turtle):
+    '''
+    Author: Anneka Bos
+    Draws a pink circle
+    '''
+    turtle.fillcolor('pink')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(50)
         turtle.right(90)
     turtle.end_fill()
     
