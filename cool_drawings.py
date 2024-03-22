@@ -53,6 +53,18 @@ def pinksqure_anneka(turtle):
         turtle.forward(50)
         turtle.right(90)
     turtle.end_fill()
+
+def yellowtriange_emma(t):
+    """
+    Author: Emma Staub
+    Draws a yellow triange
+    """
+    t.fillcolor('yellow')
+    t.begin_fill()
+    for i in range(3):
+        t.forward(75)
+        t.right(120)
+    t.end_fill()
     
 def fractal_fernando(t):
     """
