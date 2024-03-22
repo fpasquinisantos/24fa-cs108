@@ -53,6 +53,19 @@ def pinksqure_anneka(turtle):
         turtle.right(90)
     turtle.end_fill()
     
+def yellosquare_jieun (turtle):
+    """
+    Author: Jieun Seo
+    Draws a yellow square
+    """
+    turtle.fillcolor('yellow')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(200)
+        turtle.right(90)
+    turtle.end_fill()
+
+
 def fractal_fernando(t):
     """
     Author: Fernando Santos
