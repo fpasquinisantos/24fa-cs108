@@ -159,3 +159,65 @@ def purpletriangle_Abraham(turtle):
         turtle.forward(100)
         turtle.right(120)
     turtle.end_fill()
+    
+
+
+def pizza_gustafson(turtle):
+
+    """
+    This draws a cheese pizza with 8 slices
+    """
+    turtle.shape('turtle')
+    turtle.pensize(4)
+    #possition turtle
+    turtle.color('orange')
+    turtle.right(45)
+    turtle.forward(90)
+    turtle.right(45)
+    turtle.forward(90)
+    turtle.left(90)
+    #crust
+    turtle.color('orange')
+    turtle.fillcolor('orange')
+    turtle.begin_fill()
+    turtle.circle(90)
+    turtle.left(90)
+    turtle.end_fill()
+    #thickness of crust
+    turtle.up()
+    turtle.forward(10)
+    turtle.down()
+    turtle.right(90)
+    #sauce and cheese
+    turtle.color('red')
+    turtle.fillcolor('yellow')
+    turtle.begin_fill()
+    turtle.circle(80)
+    turtle.end_fill()
+    #turtle to center
+    turtle.up()
+    turtle.left(90)
+    turtle.forward(80)
+    turtle.down()
+    #slices
+    turtle.color('white')
+    num_slices = 8
+    num_cuts = int(num_slices/2)
+    for i in range(num_cuts):
+        turtle.right(360/num_slices)
+        turtle.forward(90)
+        turtle.right(90)
+        turtle.right(90)
+        turtle.forward(180)
+        turtle.right(90)
+        turtle.right(90)
+        turtle.forward(90)
+    #reposition turtle
+    turtle.left(90)
+    turtle.forward(90)
+    turtle.left(90)
+    turtle.forward(90)
+    turtle.right(90)
+
+
+
