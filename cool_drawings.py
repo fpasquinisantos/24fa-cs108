@@ -218,6 +218,16 @@ def pizza_gustafson(turtle):
     turtle.left(90)
     turtle.forward(90)
     turtle.right(90)
-
-
+    
+    def bluesquare_Junha(turtle):
+    """
+    Author: Junha Kim
+    Drawing a blue square
+    """
+    turtle.fillcolor('blue')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(200)
+        turtle.right(90)
+    turtle.end_fill()
 
