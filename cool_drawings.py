@@ -90,6 +90,19 @@ def pinksqure_anneka(turtle):
         turtle.right(90)
     turtle.end_fill()
     
+    
+def redsqure_Rowan(turtle):
+    '''
+    Author: Rowan Jansen
+    Draws a pink circle
+    '''
+    turtle.fillcolor('red')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(50)
+        turtle.right(90)
+    turtle.end_fill()
+    
 def yellosquare_jieun (turtle):
     """
     Author: Jieun Seo
@@ -219,7 +232,7 @@ def pizza_gustafson(turtle):
     turtle.forward(90)
     turtle.right(90)
     
-    def bluesquare_Junha(turtle):
+def bluesquare_Junha(turtle):
     """
     Author: Junha Kim
     Drawing a blue square
