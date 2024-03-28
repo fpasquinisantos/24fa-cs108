@@ -244,3 +244,14 @@ def bluesquare_Junha(turtle):
         turtle.right(90)
     turtle.end_fill()
 
+def purplesquare_Daniel (turtle):
+    """
+    Author: Daniel Ko
+    Draws a purple square
+    """
+    turtle.fillcolor('purple')
+    turtle.begin_fill()
+    for i in range (4):
+        turtle.forward(200)
+        turtle.right(90)
+    turtle.end_fill()
