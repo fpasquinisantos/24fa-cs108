@@ -258,3 +258,16 @@ def purplesquare_Daniel (turtle):
 
 def new():
     pass
+
+def bluesquare_Josh(turtle):
+    """
+    Author: Josh Stob
+    Draw a blue square
+    """
+    turtle = Turtle.turtle
+    turtle.fillcolor('blue')
+    turtle.beginfill()
+    for i in range(4):
+        turtle.forward(150)
+        turtle.right(90)
+    turtle.endfill()
