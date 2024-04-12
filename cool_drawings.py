@@ -255,3 +255,6 @@ def purplesquare_Daniel (turtle):
         turtle.forward(200)
         turtle.right(90)
     turtle.end_fill()
+
+def new():
+    pass
